@@ -1,0 +1,91 @@
+#course_price_text{
+    color: rgb(0, 110, 255);
+    text-decoration: underline;
+}
+
+
+#shopping_cart{
+position: fixed;
+top: 200px;
+right: -85px;
+height: 80px;
+width: 80px;
+transition: all 0.4s;
+background: url("../images/zoom.png");
+@include containBgImg;
+cursor: pointer;
+
+#amountInCart{
+    color: white;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+}
+}
+
+#shopping_list{
+z-index: 100000000000;
+overflow: auto;
+display: block;
+position: fixed;
+top: 200px;
+right: -305px;
+height: 400px;
+width: 300px;
+border: 1px solid grey;
+transition: all 0.4s;
+background: white;
+text-align: center;
+font-family: 'Poppins';
+
+button{
+    border: none;
+    outline: none;
+    background: $themeColor;
+    color: white;
+}
+h3{
+    text-align: center;
+}
+#cartBottom{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    h4{
+        float: left;
+        left: 0;
+        margin-left: 10px;
+    }
+    button{
+        margin-right: 20px;
+        float: right;
+        border: none;
+        outline: none;
+        background: $themeColor;
+        color: white;
+        font-family: 'Poppins';
+        padding: 5px;
+        width: 90px;
+        transition: all 0.4s;
+        &:hover{
+            transition: all 0.4s;
+            width: 100px;
+        }
+    }
+}
+}
+
+// ************ SECTION 1 COURSES 1 ************ //
+#section1_courses1{
+    grid-area: section1_courses1;
+    border: 2px solid #cecece;
+    @include coursesBoxHover;
+    height: 450px;
+
+    #section1_courses1_header{
+        @include coursesHeaderSection;
+    }
+}
+
