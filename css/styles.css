@@ -1,0 +1,267 @@
+body{
+    background-color:rgb(151, 216, 180);
+    color:coral;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: navbar;
+    border: none;
+    height: 90px;
+    padding: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+    background: white;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+#navbar #nav_logo {
+    margin-left: 20px;
+    height: 20%;
+    border: none;
+    float: left;
+    background-image: url();
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#links_box{
+    display: inline;
+    text-align: center;
+}
+
+#logo{
+    height: 20%;
+    width: 20%;
+    padding: 1%;
+}
+
+li{
+    display: inline;
+    padding: 2%;
+}
+
+
+#courses_grid_container #course_price_text {
+    color: #006eff;
+    text-decoration: underline;
+}
+
+#shopping_cart {
+    position: fixed;
+    top: 200px;
+    right: -85px;
+    height: 80px;
+    width: 80px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    background: url("../images/Shoe-Boxes-03.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#shopping_cart #amountInCart {
+    color: white;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  #shopping_list {
+    z-index: 100000000000;
+    overflow: auto;
+    display: block;
+    position: fixed;
+    top: 200px;
+    right: -305px;
+    height: 400px;
+    width: 300px;
+    border: 1px solid grey;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    background: white;
+    text-align: center;
+    font-family: 'Poppins';
+  }
+  
+  #shopping_list button {
+    border: none;
+    outline: none;
+    background: #e1918a;
+    color: white;
+  }
+  
+  #shopping_list h3 {
+    text-align: center;
+  }
+  
+  #shopping_list #cartBottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  #shopping_list #cartBottom h4 {
+    float: left;
+    left: 0;
+    margin-left: 10px;
+  }
+  
+  #shopping_list #cartBottom button {
+    margin-right: 20px;
+    float: right;
+    border: none;
+    outline: none;
+    background: #e1918a;
+    color: white;
+    font-family: 'Poppins';
+    padding: 5px;
+    width: 90px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  #shopping_list #cartBottom button:hover {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    width: 100px;
+  }
+  
+  #courses_section1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: courses_section1;
+    border: none;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 722px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 'courses_section1_header'
+   'courses_section1_courses';
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+body {
+
+  font-size: 17px;
+  padding: 8px;
+  }
+
+  * {
+  box-sizing: border-box;
+  }
+
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  }
+
+  .col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  }
+
+  .col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  }
+
+  .col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  }
+
+  .col-25,
+  .col-50,
+  .col-75 {
+  padding: 0 16px;
+  }
+
+  .container {
+  background-color:blanchedalmond;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  }
+
+  input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  }
+
+  label {
+  margin-bottom: 10px;
+  display: block;
+  }
+
+  .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  }
+
+  .btn {
+  background-color:coral;
+  color: darkblue;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  }
+
+  .btn:hover {
+  background-color: darkgray;
+  }
+
+  a {
+    color: coral;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 30px;
+  }
+
+  hr {
+  border: 1px solid lightgrey;
+  }
+
+  span.price {
+  float: right;
+  color: grey;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+  .row {
+      flex-direction: column-reverse;
+  }
+  .col-25 {
+      margin-bottom: 20px;
+  }
+  }
+
+.shoe{
+    height: 20px;
+    width: 40px;
+}

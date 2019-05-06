@@ -1,0 +1,14 @@
+body{
+    background-image: Url("../images/zoom.png");  
+    background-color:white;
+    text-align:center;
+    color: white;
+}
+.shoe-popup{
+    height:150px;
+    width:300px;
+}
+
+h2, h3, h4{
+    background-color: darkgray;
+}

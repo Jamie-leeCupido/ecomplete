@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kicks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="favicon" href="">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <style>
+        .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: blanchedalmond;
+    border: 2px solid coral;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .shoe{
+    height: 90px;
+    width: 125px;
+}
+#nav_links{
+  text-align: center;
+  padding: 20px 0;
+  link-decoration:none;
+}
+    </style>
+</head>
+<body>
+    <!-- This is the main container -->
+    <div style="height:100%;" id="container">
+                <div id="nav_links">
+                    <div id="links_box">
+                            <a href="index.html"><img style="height:10%; width:20%" src="images/logo.jpg" alt=""></a> <br>
+                            <a href="catagory-page.html" class="selected">Just In</a>
+                            <a href="catagory-page.html" class="selected">About Us</a>
+                            <a href="catagory-page.html" class="selected">Contact</a>
+                    </div>
+        <!-- This is the courses grid container -->
+        <div id="courses_grid_container">
+            <!-- This is the shopping cart -->
+            <div id="shopping_cart">
+                <h4 id="amountInCart"></h4>
+            </div>
+            <!-- This is the shopping cart box -->
+            <div id="shopping_list">
+                <h3>Your Cart :</h3>
+                <div id="cartItemList"></div>
+                <div id="cartBottom">
+                    <h4 id="cartTotal">Total :</h4>
+                    <button id="emptyCartList">Empty Cart</button>
+                </div>
+            </div>
+
+            <!-- This is the courses section 1 -->
+            <div id="courses_section1">
+                <!-- This is the courses section 1 header -->
+                <div id="courses_section1_header">
+                    <h2>New Releases</h2>
+                </div>
+<div class="grid-container">
+      <div class="grid-item">
+         <div id="courses_section1_courses">
+                        <div id="section1_courses1">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses1_header">
+                                <h3>Converse</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course1_info">
+                                <a href="converse.html"  target="popup"  onclick="window.open('converse.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_1.png" alt="shoe1"><br></a>
+                                
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R1800</h4>
+                                <button id="course_btn1">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+      <div class="grid-item">
+         <div id="section1_courses2">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses2_header">
+                                <h3>Nike</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course2_info">
+                                <a href="nike1.html"  target="popup"  onclick="window.open('nike1.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_2.png" alt="shoe2"><br></a>
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R2500</h4>
+                                <button id="course_btn2">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+
+      <div class="grid-item">
+                         <div id="section1_courses3">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses3_header">
+                                <h3>Nike</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course3_info">
+                                <a href="nike2.html"  target="popup"  onclick="window.open('nike2.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_3.png" alt="shoe2"><br></a>
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R3200</h4>
+                                <button id="course_btn3">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+
+      <div class="grid-item">
+                           <div id="section1_courses4">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses4_header">
+                                <h3>Puma</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course4_info">
+                                <a href="puma1.html"  target="popup"  onclick="window.open('puma1.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_4.png" alt="shoe4"><br></a>
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R4000</h4>
+                                <button id="course_btn4">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+
+      <div class="grid-item">
+                            <div id="section1_courses5">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses5_header">
+                                <h3>New Balance</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course5_info">
+                                <a href="new-balance.html"  target="popup"  onclick="window.open('new-balance.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_5.png" alt="shoe5"><br></a>
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R2700</h4>
+                                <button id="course_btn5">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+      <div class="grid-item">
+                            <div id="section1_courses6">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses6_header">
+                                <h3>Nike</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course6_info">
+                                <a href="nike.html"  target="popup"  onclick="window.open('nike3.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_6.png" alt="shoe6"><br></a>
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R1500</h4>
+                                <button id="course_btn6">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+
+      <div class="grid-item">
+                            <div id="section1_courses7">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses7_header">
+                                <h3>Nike</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course7_info">
+                                <a href="nike4.html"  target="popup"  onclick="window.open('nike4.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_7.png" alt="shoe7"><br></a>
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R3000</h4>
+                                <button id="course_btn7">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+      <div class="grid-item">
+                            <div id="section1_courses8">
+                            <!-- This is the courses section 1 courses header -->
+                            <div id="section1_courses8_header">
+                                <h3>Puma</h3>
+                            </div>
+                            <!-- This is the courses section 1 courses info -->
+                            <div id="section1_course8_info">
+                                <a href="puma2.html"  target="popup"  onclick="window.open('puma2.html','popup','width=600,height=450,scrollbars=no,resizable=no'); return false;"><img class="shoe" src="images/shoe_8.png" alt="shoe8"><br></a>
+                                <select>
+                                    <option value="UK">UK</option>
+                                    <option value="US">US</option>
+                                </select><br>
+                                <input type="text" name="Size" value="size">
+                                <h4><b>Pricing : </b> R1750</h4>
+                                <button id="course_btn8">Add to Cart</button>
+                            </div>
+                        </div>
+                      </div>
+
+    </div>
+
+                    <h2>Checkout Form</h2>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Cape Town">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Province</label>
+                <input type="text" id="state" name="state" placeholder="Western Cape">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10111">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+                    <div id="shopping_cart">
+                <h4 id="amountInCart"></h4>
+            </div>
+                <div id="cartBottom">
+                    <h4 id="cartTotal">Total :</h4>
+                </div>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+</div>
+    </div>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/courses.js"></script>
+
+</body>
+</html>
